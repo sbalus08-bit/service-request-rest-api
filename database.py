@@ -30,7 +30,7 @@ def create_database():
 		sample_requests = [
 		(
 			1,
-			"Replace ATM receipt printer", 
+			"Replace ATM receipt printer",
 			"Adam Johnson",
 			"adam.johnson@gmail.com"
 		),
@@ -49,10 +49,7 @@ def create_database():
 			"john.doe@gmail.com"
 		)]
 
-	# Execute a range of INSERT commands with executemany.
-	# Making use of '?' as placeholders which is good practice against SQL injections.
-
-	cursor.executemany("""
+		cursor.executemany("""
 		INSERT INTO service_requests
 		(id, description, customer_name, customer_email)
 		VALUES (?,?,?,?)
@@ -89,9 +86,9 @@ def get_service_request(request_id):
 	if row is None:
 		return None
 
-		return {
-			"id": row["id"],
-			"description": row["description"],
-			"customer_name": row["customer_name"],
-			"customer_email": row["customer_email"]
-			}
+	return {
+		"id": row["id"],
+		"description": row["description"],
+		"customer_name": row["customer_name"],
+		"customer_email": row["customer_email"]
+		}

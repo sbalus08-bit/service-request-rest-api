@@ -24,6 +24,6 @@ def service_request(request_id):
 # The following code starts the server when the app is ran directly.
 # IP is set to 0.0.0.0 to allow connections from outside of the computer.
 
-	if __name__ == "__main__":
-		app.run(host="0.0.0.0", port=5000)
+if __name__ == "__main__":
+	app.run(host="0.0.0.0", port=5000)
 
