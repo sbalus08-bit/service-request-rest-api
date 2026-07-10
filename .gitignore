@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+
+# SQLite database. When the app is ran the database is created automatically. 
+*.db
+
+# Environment variables. Good practice for avoiding sensitive information being uploaded.
+.env
+
+# macOS (if ever used)
+.DS_Store
