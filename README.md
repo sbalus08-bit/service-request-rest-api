@@ -34,11 +34,11 @@ ___
 ```text
 
 .
-|-- app.py
-|-- database.py
-|-- Dockerfile
-|-- requirements.txt
-|-- .gitignore
+├── app.py
+├── database.py
+├── Dockerfile
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
